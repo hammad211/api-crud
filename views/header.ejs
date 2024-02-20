@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+   
+</head>
+<body >
+    
+      <header class="header_section">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="/">          
+            <span>
+            Giftos
+            </span>
+          </a>
+        
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/customer/Products" >
+                  Shop
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/customer/customerWhy">
+                  Why Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/customer/contact"> Contact Us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/users/login"> Admin </a>
+              </li>
+            </ul>
+            <div class="user_option">
+             <% if (!user){%>
+
+              <a  href= "/customer/login" class="nav-link">
+              <i class="fa fa-user" aria-hidden="true"> </i> Login
+              <a href= "/customer/Register"> Register </a>
+             </a>  
+             <%}%>
+
+              
+             <% if (user) { %>
+                <a class="nav-link" href="/customer/logout"> Logout </a>
+             <%}%>
+
+              <a href="/customer/cart">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              </a>
+            
+            </div>
+            
+          </div>
+          
+        </nav>
+    </header>
+</body>
+</html>
